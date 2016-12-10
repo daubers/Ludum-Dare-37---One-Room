@@ -44,9 +44,10 @@
        x2="479.10275"
        y2="804.14777"
        gradientUnits="userSpaceOnUse"
-       spreadMethod="pad" />
+       spreadMethod="pad"
+       gradientTransform="translate(10.642857,-7.785625)" />
     <linearGradient
-       gradientTransform="matrix(0,-1,1,0,-558.79062,1049.5049)"
+       gradientTransform="matrix(0,-1,1,0,-548.14776,1041.7193)"
        inkscape:collect="always"
        xlink:href="#linearGradient11512"
        id="linearGradient11518-5"
@@ -57,7 +58,7 @@
        gradientUnits="userSpaceOnUse"
        spreadMethod="pad" />
     <linearGradient
-       gradientTransform="matrix(-1,0,0,-1,490.71426,1608.2955)"
+       gradientTransform="matrix(-1,0,0,-1,501.35712,1600.5099)"
        inkscape:collect="always"
        xlink:href="#linearGradient11512"
        id="linearGradient11518-7"
@@ -68,10 +69,10 @@
        gradientUnits="userSpaceOnUse"
        spreadMethod="pad" />
     <linearGradient
-       gradientTransform="matrix(0,1,-1,0,1049.5048,558.79069)"
+       gradientTransform="matrix(0,1,-1,0,1060.1477,551.00503)"
        inkscape:collect="always"
        xlink:href="#linearGradient11512"
-       id="linearGradient11518-5-3"
+       id="linearGradient11518-7-4"
        x1="496.73618"
        y1="804.14777"
        x2="479.10275"
@@ -88,7 +89,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.89667674"
      inkscape:cx="261.42857"
-     inkscape:cy="310.6469"
+     inkscape:cy="443.60012"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -117,27 +118,34 @@
      id="layer1"
      transform="translate(0,-540.36216)">
     <g
-       id="g11594"
-       transform="translate(10.642857,-7.785625)">
+       id="g11636"
+       inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\tile.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
-         d="m 8.3311863,567.12183 474.0519137,0 0,474.05187 -474.0519137,0 z m -12.9740448,-12.97406 499.9999985,0 0,500.00003 -499.9999985,0 z"
+         d="m 18.974043,559.33621 474.051917,0 0,474.05189 -474.051917,0 z m -12.9740445,-12.97406 500.0000015,0 0,500.00005 -500.0000015,0 z"
          style="fill:url(#linearGradient11518);fill-opacity:1;stroke:#000000;stroke-width:0.94810379"
          id="rect11484-9"
          inkscape:connector-curvature="0" />
       <path
-         d="m 8.3312108,1041.1737 0,-474.05188 474.0518292,0 0,474.05188 z m -12.97406,12.9741 0,-500.00002 499.9999792,0 0,500.00002 z"
+         d="m 18.974068,1033.3881 0,-474.0519 474.051832,0 0,474.0519 z m -12.9740602,12.9741 0,-500.00004 499.9999822,0 0,500.00004 z"
          style="fill:url(#linearGradient11518-5);fill-opacity:1;stroke:#000000;stroke-width:0.94810379"
          id="rect11484-9-7"
          inkscape:connector-curvature="0" />
       <path
-         d="m 482.38316,1041.1737 -474.0519346,0 0,-474.05182 474.0519346,0 z m 12.974,12.9741 -500.0000346,0 0,-500.00002 500.0000346,0 z"
+         d="m 493.02602,1033.3881 -474.051939,0 0,-474.05186 474.051939,0 z m 12.974,12.9741 -500.0000388,0 0,-500.00006 500.0000388,0 z"
          style="fill:url(#linearGradient11518-7);fill-opacity:1;stroke:#000000;stroke-width:0.94810379"
          id="rect11484-9-0"
          inkscape:connector-curvature="0" />
       <path
-         d="m 482.38301,567.12189 0,474.05191 -474.0518346,0 0,-474.05191 z m 12.9741,-12.9741 0,500.00001 -499.9999346,0 0,-500.00001 z"
-         style="fill:url(#linearGradient11518-5-3);fill-opacity:1;stroke:#000000;stroke-width:0.94810379"
-         id="rect11484-9-7-0"
+         inkscape:connector-curvature="0"
+         id="path11606"
+         d="m 493.02592,559.3362 0,474.0519 -474.051839,0 0,-474.0519 z"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.94810379" />
+      <path
+         d="m 493.02594,559.33613 0,474.05197 -474.051889,0 0,-474.05197 z m 12.97411,-12.974 0,500.00007 -500.000099,0 0,-500.00007 z"
+         style="fill:url(#linearGradient11518-7-4);fill-opacity:1;stroke:#000000;stroke-width:0.94810379"
+         id="rect11484-9-0-0"
          inkscape:connector-curvature="0" />
     </g>
   </g>

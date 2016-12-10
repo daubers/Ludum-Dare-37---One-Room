@@ -9,15 +9,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1024"
-   height="513"
-   viewBox="0 0 1024 513.00001"
-   id="svg10353"
+   width="200.88072"
+   height="205.41295"
+   viewBox="0 0 200.88073 205.41295"
+   id="svg11643"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="vent.svg">
+   sodipodi:docname="heart.svg">
   <defs
-     id="defs10355" />
+     id="defs11645" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -25,20 +25,25 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="-112.14286"
-     inkscape:cy="520"
+     inkscape:zoom="2.2026376"
+     inkscape:cx="197.62602"
+     inkscape:cy="112.20358"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
+     showguides="false"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="1672"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
-     id="metadata10358">
+     id="metadata11648">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -53,13 +58,15 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-539.36216)">
+     transform="translate(-204.12917,-692.08641)">
     <path
-       style="fill:#999999;fill-opacity:1;stroke:#000000"
-       d="M -5.7148438 -1.2851562 L -5.7148438 518.71484 L 1025.7148 518.71484 L 1025.7148 -1.2851562 L -5.7148438 -1.2851562 z M 60 63 L 960 63 L 960 134.42773 L 60 134.42773 L 60 63 z M 60 183.95312 L 960 183.95312 L 960 255.38086 L 60 255.38086 L 60 183.95312 z M 60 304.9043 L 960 304.9043 L 960 376.33398 L 60 376.33398 L 60 304.9043 z M 60 425.85742 L 960 425.85742 L 960 497.28516 L 60 497.28516 L 60 425.85742 z "
-       transform="translate(0,539.36216)"
-       id="rect10901"
-       inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\vent.png"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 259.45117,152.22656 c -18.44357,-0.17132 -38.51148,9.14026 -51.71484,34.25586 -21.17862,40.28623 72.23799,143.45772 94.73828,167.41016 l 2.39648,2.53125 c 23.35403,-22.91306 115.92895,-123.06176 97.13477,-169.94141 -30.17913,-57.4071 -96.2238,-32.2477 -96.75781,0 l -0.37696,22.82031 -0.3789,-22.82031 c -0.30038,-18.13933 -21.32785,-34.03559 -45.04102,-34.25586 z"
+       transform="translate(0,540.36216)"
+       id="path12191"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ssccccccs"
+       inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\ui\heart.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
   </g>
