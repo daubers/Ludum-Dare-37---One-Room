@@ -55,7 +55,10 @@
      id="layer1"
      transform="translate(0,-540.36216)">
     <g
-       id="g7378">
+       id="g7378"
+       inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\ant\ant_body.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <ellipse
          transform="matrix(0.96592583,-0.25881905,0.25881905,0.96592583,0,0)"
          ry="35.951797"
@@ -86,6 +89,9 @@
        cx="249.75024"
        cy="935.32745"
        rx="56.987427"
-       ry="3.8246593" />
+       ry="3.8246593"
+       inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\ant\ant_limb.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
 </svg>

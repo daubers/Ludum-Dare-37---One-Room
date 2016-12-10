@@ -7,13 +7,21 @@ public class PlayerBehavior : MonoBehaviour {
     public float velocityMultiple = 1f;
     public float moveForce = 100f;
 
+    public float climbSpeed = 5f;
+
     private Rigidbody2D rb2d;
     private bool isGrounded = false;
     private bool facingRight = true;
 
+    private bool canClimb = false;
+    private bool isClimbing = false;
+
+    private float startGravity;
+
 	// Use this for initialization
 	void Start () {
         rb2d = GetComponent<Rigidbody2D>();
+        startGravity = rb2d.gravityScale;
 	}
 	
 	// Update is called once per frame
@@ -57,6 +65,27 @@ public class PlayerBehavior : MonoBehaviour {
                 }
             }
         }
+
+        float inputVert = Input.GetAxis("Vertical");
+        canClimb = Physics2D.Raycast(transform.position, transform.up * rb2d.velocity.magnitude, 1, 1 << LayerMask.NameToLayer("Ladder"));
+        if (rb2d.gravityScale == 0 && !canClimb)
+        {
+            rb2d.gravityScale = startGravity;
+            isClimbing = false;
+        }
+        if (inputVert != 0 && canClimb)
+        {
+            if (isClimbing)
+            {
+                rb2d.velocity = new Vector2(rb2d.velocity.x, inputVert*climbSpeed);
+            }
+            else
+            {
+                rb2d.gravityScale = 0;
+                rb2d.velocity = new Vector2(rb2d.velocity.x, inputVert*climbSpeed);
+            }
+        }
+
     }
 
     void OnCollisionEnter2D(Collision2D other)
