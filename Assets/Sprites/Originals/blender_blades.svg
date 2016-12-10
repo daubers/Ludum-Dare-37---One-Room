@@ -64,7 +64,10 @@
        height="105.71429"
        x="-7.3969355"
        y="168.01628"
-       transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,0,0)" />
+       transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,0,0)"
+       inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\blender_blades.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <rect
        style="fill:#000000;fill-opacity:1;stroke:#000000"
        id="rect10336-4"
@@ -72,6 +75,9 @@
        height="105.71429"
        x="86.951302"
        y="262.36453"
-       transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,0,0)" />
+       transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,0,0)"
+       inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\blender_blades.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
 </svg>
