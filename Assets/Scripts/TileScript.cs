@@ -42,7 +42,7 @@ public class TileScript : MonoBehaviour
         }
 
         // Set the parent last on the prefab to prevent transform displacement
-        childPrefab.transform.parent = transform;
+        Destroy(childPrefab);
 
         // Disable the currently existing sprite component since its now a repeated image
         sprite.enabled = false;
