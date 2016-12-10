@@ -55,6 +55,11 @@ public class HealthController : MonoBehaviour {
         }
     }
 
+    public void instaDeath()
+    {
+        hit(currentHealth);
+    }
+
     void addHealth(int extraHealth)
     {
         currentHealth = currentHealth + extraHealth;

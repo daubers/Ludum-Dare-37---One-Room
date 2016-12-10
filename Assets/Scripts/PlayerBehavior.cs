@@ -117,6 +117,10 @@ public class PlayerBehavior : MonoBehaviour {
             }
             
         }
+        else if (other.gameObject.tag == "instadeath")
+        {
+            gameObject.GetComponent<HealthController>().instaDeath();
+        }
     }
 
     void OnDrawGizmos()
