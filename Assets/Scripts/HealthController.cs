@@ -44,7 +44,6 @@ public class HealthController : MonoBehaviour {
     {
         if (Time.fixedTime  > lastDamage + damageDebounce)
         {
-            Debug.Log("Damage " + Time.fixedTime);
             currentHealth = currentHealth - damage;
             if (currentHealth <= 0)
             {
@@ -80,7 +79,6 @@ public class HealthController : MonoBehaviour {
                 heartToUse = heartEmpty;
             else
                 heartToUse = heartFull;
-            Debug.Log("Heartgauges = " + heartGauge.Count.ToString());
             if (i>heartGauge.Count)
             {
                 GameObject child = Instantiate(heartToUse);
@@ -91,8 +89,6 @@ public class HealthController : MonoBehaviour {
             else
             {
                 heartGauge[heartGauge.Count-i].GetComponent<Image>().sprite = heartToUse.GetComponent<Image>().sprite;
-                Debug.Log(heartToUse.GetComponent<Image>().sprite.name);
-                Debug.Log("Updating sprites");
             }
         }
     }
