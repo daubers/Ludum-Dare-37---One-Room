@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\KnifeBehaviour.cs" />
     <Compile Include="Assets\Scripts\PlayerBehavior.cs" />
     <Compile Include="Assets\Scripts\SimpleEnemyScript.cs" />
+    <Compile Include="Assets\Scripts\TileScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
