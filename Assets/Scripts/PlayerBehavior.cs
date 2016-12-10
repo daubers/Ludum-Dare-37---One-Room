@@ -92,7 +92,7 @@ public class PlayerBehavior : MonoBehaviour {
     {
         if (other.gameObject.tag == "Enemy")
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, -1 * Vector2.up, 1.45f, ~(1 << LayerMask.NameToLayer("Player")));
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, -1 * Vector2.up, 1.45f, ~((1 << LayerMask.NameToLayer("Player")) | 1 << LayerMask.NameToLayer("Ladder")));
             if (!object.ReferenceEquals(null, hit))
             {
                 Debug.Log(hit.collider.transform.gameObject);
