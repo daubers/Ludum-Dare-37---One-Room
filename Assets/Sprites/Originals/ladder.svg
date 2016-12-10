@@ -63,6 +63,9 @@
        d="m 114.28516,23.427734 0,48.572266 0,28.57227 0,76.18945 0,28.57226 0,76.18946 0,28.57226 0,76.18946 0,28.57226 0,94.28516 28.57226,0 0,-94.28516 211.42774,0 0,94.28516 28.57226,0 0,-485.714846 -28.57226,0 0,48.572266 -211.42774,0 0,-48.572266 -28.57226,0 z m 28.57226,77.144536 211.42774,0 0,76.18945 -211.42774,0 0,-76.18945 z m 0,104.76171 211.42774,0 0,76.18946 -211.42774,0 0,-76.18946 z m 0,104.76172 211.42774,0 0,76.18946 -211.42774,0 0,-76.18946 z"
        transform="translate(0,540.36216)"
        id="rect7931"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\ladder.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
 </svg>
