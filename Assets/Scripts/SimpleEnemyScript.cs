@@ -5,7 +5,7 @@ public class SimpleEnemyScript : MonoBehaviour {
 
     public float walkSpeed = 5f;
     public float debounceTime = 0.5f;
-
+    public AudioClip ouch;
 
     private float lastChange = 0;
     private bool onGround = false;
@@ -45,6 +45,12 @@ public class SimpleEnemyScript : MonoBehaviour {
             }
         }
              
+    }
+
+    public void hit(int points)
+    {
+        AudioSource.PlayClipAtPoint(ouch, transform.position);
+        GetComponent<HealthController>().hit(points);
     }
 
     void OnDrawGizmos()

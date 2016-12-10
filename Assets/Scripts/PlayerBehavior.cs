@@ -92,14 +92,14 @@ public class PlayerBehavior : MonoBehaviour {
     {
         if (other.gameObject.tag == "Enemy")
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, -1 * Vector2.up, 1.45f, ~((1 << LayerMask.NameToLayer("Player")) | 1 << LayerMask.NameToLayer("Ladder")));
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, -1 * Vector2.up, 1.5f, ~((1 << LayerMask.NameToLayer("Player")) | 1 << LayerMask.NameToLayer("Ladder")));
             if (!object.ReferenceEquals(null, hit))
             {
                 Debug.Log(hit.collider.transform.gameObject);
                 if (hit.transform.gameObject.tag == "Enemy")
                 {
                     // good hit
-                    other.gameObject.GetComponent<HealthController>().hit(1);
+                    other.gameObject.GetComponent<SimpleEnemyScript>().hit(1);
                 }
             }
         }
@@ -108,6 +108,6 @@ public class PlayerBehavior : MonoBehaviour {
     void OnDrawGizmos()
     {
         Gizmos.DrawLine(transform.position,
-            transform.position + transform.up * -1.45f);
+            transform.position + transform.up * -1.5f);
     }
 }
