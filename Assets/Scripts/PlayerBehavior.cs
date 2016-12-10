@@ -9,6 +9,8 @@ public class PlayerBehavior : MonoBehaviour {
 
     public float climbSpeed = 5f;
 
+    public float enemyBounceForce = 100f;
+
     private Rigidbody2D rb2d;
     private bool isGrounded = false;
     private bool facingRight = true;
@@ -34,12 +36,6 @@ public class PlayerBehavior : MonoBehaviour {
         bool centerRay = Physics2D.Raycast(transform.position, transform.up * direction, rayLength, (1 << LayerMask.NameToLayer("Ground") | 1 << LayerMask.NameToLayer("Ladder")));
         bool leftRay = Physics2D.Raycast(transform.position, Quaternion.AngleAxis(-1*arc, new Vector3(0, 0, 1))*transform.up * direction, rayLength, (1 << LayerMask.NameToLayer("Ground") | 1 << LayerMask.NameToLayer("Ladder")));
         bool rightRay = Physics2D.Raycast(transform.position, Quaternion.AngleAxis(arc, new Vector3(0, 0, 1)) * transform.up * direction, rayLength, (1 << LayerMask.NameToLayer("Ground") | 1 << LayerMask.NameToLayer("Ladder")));
-
-
-
-        Debug.Log(centerRay);
-        Debug.Log(leftRay);
-        Debug.Log(rightRay);
 
         return leftRay || centerRay || rightRay;
     }
@@ -106,15 +102,20 @@ public class PlayerBehavior : MonoBehaviour {
     {
         if (other.gameObject.tag == "Enemy")
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, -1 * Vector2.up, 1.5f, ~((1 << LayerMask.NameToLayer("Player")) | 1 << LayerMask.NameToLayer("Ladder")));
-            if (!object.ReferenceEquals(null, hit))
-            {
-                if (hit.transform.gameObject.tag == "Enemy")
-                {
-                    // good hit
-                    other.gameObject.GetComponent<SimpleEnemyScript>().hit(1);
-                }
+            Vector2 dir = other.contacts[0].point - new Vector2(transform.position.x, transform.position.y);
+            dir = -dir.normalized;
+            rb2d.AddForce(enemyBounceForce * dir);
+
+            bool hit = Physics2D.Raycast(transform.position, -1 * Vector2.up, 1.5f, 1 << LayerMask.NameToLayer("Enemy"));
+            if (hit)
+            {    
+                other.gameObject.GetComponent<SimpleEnemyScript>().hit(1);
             }
+            else
+            {
+                gameObject.GetComponent<HealthController>().hit(1);
+            }
+            
         }
     }
 

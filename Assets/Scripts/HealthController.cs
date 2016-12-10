@@ -1,12 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class HealthController : MonoBehaviour {
 
     public int totalHealth = 1;
     public GameObject heartFull;
     public GameObject heartEmpty;
+    public float damageDebounce = 1f;
+
+    private float lastDamage = 0f;
 
     private bool isPlayer;
     private int currentHealth;
@@ -38,10 +42,16 @@ public class HealthController : MonoBehaviour {
 	
     public void hit(int damage)
     {
-        currentHealth = currentHealth - damage;
-        if (currentHealth <= 0)
+        if (Time.fixedTime  > lastDamage + damageDebounce)
         {
-            Destroy(gameObject);
+            Debug.Log("Damage " + Time.fixedTime);
+            currentHealth = currentHealth - damage;
+            if (currentHealth <= 0)
+            {
+                Destroy(gameObject);
+            }
+            lastDamage = Time.fixedTime;
+            updateHealthUI();
         }
     }
 
@@ -58,19 +68,26 @@ public class HealthController : MonoBehaviour {
 
     private void updateHealthUI()
     {
-        for (int i = 0; i < totalHealth; i++)
+        for (int i = 1; i < totalHealth+1; i++)
         {
             GameObject heartToUse;
-            if (i < (totalHealth - currentHealth))
+            if (i-1 < (totalHealth - currentHealth))
                 heartToUse = heartEmpty;
             else
                 heartToUse = heartFull;
-
-            if (i>=heartGauge.Count)
+            Debug.Log("Heartgauges = " + heartGauge.Count.ToString());
+            if (i>heartGauge.Count)
             {
                 GameObject child = Instantiate(heartToUse);
-                child.transform.position = (heartToUse.GetComponent<RectTransform>().position) + (new Vector3(heartToUse.GetComponent<RectTransform>().sizeDelta.x*i, 0, 0));
+                child.transform.position = (heartToUse.GetComponent<RectTransform>().position) + (new Vector3(heartToUse.GetComponent<RectTransform>().sizeDelta.x*(i-1), 0, 0));
                 child.transform.SetParent(UICanvas.transform, false);
+                heartGauge.Add(child);
+            }
+            else
+            {
+                heartGauge[heartGauge.Count-i].GetComponent<Image>().sprite = heartToUse.GetComponent<Image>().sprite;
+                Debug.Log(heartToUse.GetComponent<Image>().sprite.name);
+                Debug.Log("Updating sprites");
             }
         }
     }
