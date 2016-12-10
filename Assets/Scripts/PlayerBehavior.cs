@@ -29,20 +29,41 @@ public class PlayerBehavior : MonoBehaviour {
 	    
 	}
 
+    bool isGroundedB(float arc, float rayLength, int direction)
+    {
+        bool centerRay = Physics2D.Raycast(transform.position, transform.up * direction, rayLength, (1 << LayerMask.NameToLayer("Ground") | 1 << LayerMask.NameToLayer("Ladder")));
+        bool leftRay = Physics2D.Raycast(transform.position, Quaternion.AngleAxis(-1*arc, new Vector3(0, 0, 1))*transform.up * direction, rayLength, (1 << LayerMask.NameToLayer("Ground") | 1 << LayerMask.NameToLayer("Ladder")));
+        bool rightRay = Physics2D.Raycast(transform.position, Quaternion.AngleAxis(arc, new Vector3(0, 0, 1)) * transform.up * direction, rayLength, (1 << LayerMask.NameToLayer("Ground") | 1 << LayerMask.NameToLayer("Ladder")));
+
+
+
+        Debug.Log(centerRay);
+        Debug.Log(leftRay);
+        Debug.Log(rightRay);
+
+        return leftRay || centerRay || rightRay;
+    }
+
     void FixedUpdate()
     {
 
-        isGrounded = Physics2D.Raycast(transform.position, transform.up * -1, 2, 1 << LayerMask.NameToLayer("Ground"));
-
-        if (!isGrounded)
+        isGrounded = isGroundedB(15, 1.6f, -1);
+        bool isLadderAbove = Physics2D.Raycast(transform.position, transform.up, 2, (1 << LayerMask.NameToLayer("Ladder")));
+        bool isLadderBelow = Physics2D.Raycast(transform.position, transform.up*-1, 2, (1 << LayerMask.NameToLayer("Ladder")));
+        if (rb2d.velocity.y>maxVelocity)
         {
-            rb2d.drag = 0;
+            rb2d.velocity = new Vector2(rb2d.velocity.x, maxVelocity);
         }
 
 
-        if (Input.GetAxis("Jump") > 0 && isGrounded)
+
+        if (Input.GetAxis("Jump") > 0 && isGrounded && !isLadderAbove)
         {
-            rb2d.AddForce(new Vector2(0, jumpForce));
+            float tmpJumpForce = jumpForce;
+            if (isLadderBelow)
+                tmpJumpForce = tmpJumpForce / 10;
+                
+            rb2d.AddForce(new Vector2(0, tmpJumpForce));
         }
 
         float inputHoriz = Input.GetAxis("Horizontal");
@@ -68,22 +89,15 @@ public class PlayerBehavior : MonoBehaviour {
 
         float inputVert = Input.GetAxis("Vertical");
         canClimb = Physics2D.Raycast(transform.position, transform.up * rb2d.velocity.magnitude, 1, 1 << LayerMask.NameToLayer("Ladder"));
-        if (rb2d.gravityScale == 0 && !canClimb)
+        if (!canClimb)
         {
-            rb2d.gravityScale = startGravity;
+            //rb2d.gravityScale = startGravity;
             isClimbing = false;
         }
         if (inputVert != 0 && canClimb)
         {
-            if (isClimbing)
-            {
-                rb2d.velocity = new Vector2(rb2d.velocity.x, inputVert*climbSpeed);
-            }
-            else
-            {
-                rb2d.gravityScale = 0;
-                rb2d.velocity = new Vector2(rb2d.velocity.x, inputVert*climbSpeed);
-            }
+            rb2d.velocity = new Vector2(rb2d.velocity.x, inputVert*climbSpeed);
+            isClimbing = true;
         }
 
     }
@@ -107,6 +121,11 @@ public class PlayerBehavior : MonoBehaviour {
     void OnDrawGizmos()
     {
         Gizmos.DrawLine(transform.position,
-            transform.position + transform.up * -1.5f);
+            transform.position + transform.up * -1.6f);
+        Gizmos.DrawLine(transform.position,
+    transform.position + Quaternion.AngleAxis(-1 * 15, new Vector3(0, 0, 1)) * transform.up * -1.6f);
+        Gizmos.DrawLine(transform.position,
+            transform.position + Quaternion.AngleAxis(1 * 15, new Vector3(0, 0, 1)) * transform.up * -1.6f);
+
     }
 }
