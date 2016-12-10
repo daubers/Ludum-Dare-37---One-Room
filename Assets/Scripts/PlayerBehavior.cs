@@ -9,13 +9,11 @@ public class PlayerBehavior : MonoBehaviour {
 
     private Rigidbody2D rb2d;
     private bool isGrounded = false;
-    private float startDrag = 0f;
     private bool facingRight = true;
 
 	// Use this for initialization
 	void Start () {
         rb2d = GetComponent<Rigidbody2D>();
-        startDrag = rb2d.drag;
 	}
 	
 	// Update is called once per frame
@@ -61,9 +59,26 @@ public class PlayerBehavior : MonoBehaviour {
         }
     }
 
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, -1 * Vector2.up, 1.45f, ~(1 << LayerMask.NameToLayer("Player")));
+            if (!object.ReferenceEquals(null, hit))
+            {
+                Debug.Log(hit.collider.transform.gameObject);
+                if (hit.transform.gameObject.tag == "Enemy")
+                {
+                    // good hit
+                    other.gameObject.GetComponent<HealthController>().hit(1);
+                }
+            }
+        }
+    }
+
     void OnDrawGizmos()
     {
         Gizmos.DrawLine(transform.position,
-            transform.position + transform.up * -2);
+            transform.position + transform.up * -1.45f);
     }
 }
