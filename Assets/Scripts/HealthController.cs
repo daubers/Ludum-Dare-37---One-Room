@@ -61,7 +61,6 @@ public class HealthController : MonoBehaviour {
         for (int i = 0; i < totalHealth; i++)
         {
             GameObject heartToUse;
-            Debug.Log(totalHealth-currentHealth);
             if (i < (totalHealth - currentHealth))
                 heartToUse = heartEmpty;
             else

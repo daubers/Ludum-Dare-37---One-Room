@@ -95,7 +95,6 @@ public class PlayerBehavior : MonoBehaviour {
             RaycastHit2D hit = Physics2D.Raycast(transform.position, -1 * Vector2.up, 1.5f, ~((1 << LayerMask.NameToLayer("Player")) | 1 << LayerMask.NameToLayer("Ladder")));
             if (!object.ReferenceEquals(null, hit))
             {
-                Debug.Log(hit.collider.transform.gameObject);
                 if (hit.transform.gameObject.tag == "Enemy")
                 {
                     // good hit
