@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class LevelSelect : MonoBehaviour {
@@ -12,4 +13,14 @@ public class LevelSelect : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    public void loadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+    }
+
+    public void loadSceneByNo(int sceneNo)
+    {
+        SceneManager.LoadScene(1);
+    }
 }
