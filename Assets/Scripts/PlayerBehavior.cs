@@ -19,10 +19,12 @@ public class PlayerBehavior : MonoBehaviour {
     private bool isClimbing = false;
 
     private float startGravity;
+    private ScoreController scoreController;
 
 	// Use this for initialization
 	void Start () {
         rb2d = GetComponent<Rigidbody2D>();
+        scoreController = GetComponent<ScoreController>();
         startGravity = rb2d.gravityScale;
 	}
 	
@@ -109,7 +111,7 @@ public class PlayerBehavior : MonoBehaviour {
             bool hit = Physics2D.Raycast(transform.position, -1 * Vector2.up, 1.5f, 1 << LayerMask.NameToLayer("Enemy"));
             if (hit)
             {    
-                other.gameObject.GetComponent<SimpleEnemyScript>().hit(1);
+                scoreController.addPoints(other.gameObject.GetComponent<SimpleEnemyScript>().hit(1));
             }
             else
             {

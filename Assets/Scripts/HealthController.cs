@@ -40,18 +40,24 @@ public class HealthController : MonoBehaviour {
 
 	}
 	
-    public void hit(int damage)
+    public int hit(int damage)
     {
+        /* Takes damage, returns score
+         * 
+         */
         if (Time.fixedTime  > lastDamage + damageDebounce)
         {
             currentHealth = currentHealth - damage;
             if (currentHealth <= 0)
             {
+                int score = gameObject.GetComponent<EnemyProperties>().getPoints();
                 Destroy(gameObject);
+                return score;
             }
             lastDamage = Time.fixedTime;
             updateHealthUI();
         }
+        return 0;
     }
 
     public void instaDeath()

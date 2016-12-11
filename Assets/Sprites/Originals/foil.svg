@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="402.56332"
+   height="473.96304"
+   viewBox="0 0 402.56333 473.96305"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="foil.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.0798267"
+     inkscape:cx="87.718132"
+     inkscape:cy="279.70708"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1680"
+     inkscape:window-height="987"
+     inkscape:window-x="-8"
+     inkscape:window-y="19"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-71.103252,-567.75459)">
+    <g
+       id="g4176"
+       inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\foil.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="cccccccc"
+         inkscape:connector-curvature="0"
+         id="rect4173"
+         d="m 105.67939,574.00696 359.95789,0 c 8.10315,36.16614 11.80745,78.81481 0,115.44399 -6.94556,37.78677 -12.27049,76.03658 0,115.44398 8.10315,36.16614 11.11289,79.9724 0,115.44399 -8.33467,38.48133 -9.72378,78.35177 0,115.44398 l -359.95789,0 z"
+         style="fill:#ececec;fill-opacity:1;stroke:#000000;stroke-width:0.99307495" />
+      <path
+         id="rect4136"
+         transform="translate(0,540.36216)"
+         d="m 71.603516,33.998047 0,460.859373 0.144531,0 a 17.054388,5.3429317 0 0 0 -0.144531,0.65625 17.054388,5.3429317 0 0 0 17.054687,5.3418 17.054388,5.3429317 0 0 0 17.054687,-5.3418 17.054388,5.3429317 0 0 0 -0.15039,-0.65625 l 0.15234,0 0,-460.859373 -34.111324,0 z"
+         style="fill:#e6e6e6;fill-opacity:1;stroke:#000000"
+         inkscape:connector-curvature="0" />
+      <ellipse
+         ry="2.4689283"
+         rx="7.8807039"
+         cy="573.59863"
+         cx="88.658752"
+         id="path4138-7"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.46312079" />
+      <ellipse
+         ry="5.3429317"
+         rx="17.054388"
+         cy="573.59863"
+         cx="88.658752"
+         id="path4138"
+         style="fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:1.0022254" />
+    </g>
+  </g>
+</svg>

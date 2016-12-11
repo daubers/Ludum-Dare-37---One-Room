@@ -47,10 +47,10 @@ public class SimpleEnemyScript : MonoBehaviour {
              
     }
 
-    public void hit(int points)
+    public int hit(int points)
     {
         AudioSource.PlayClipAtPoint(ouch, transform.position);
-        GetComponent<HealthController>().hit(points);
+        return GetComponent<HealthController>().hit(points);
     }
 
     void OnDrawGizmos()
