@@ -63,40 +63,58 @@
        width="693.2215"
        height="675.01398"
        x="31.428579"
-       y="369.50507" />
+       y="369.50507"
+       inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\oven.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.79204547"
        id="rect4698"
        width="547.7146"
        height="265.92224"
        x="104.18203"
-       y="704.41504" />
+       y="704.41504"
+       inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\oven.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.66764015"
        id="rect4698-9"
        width="547.83899"
        height="188.90379"
        x="104.11983"
-       y="437.71002" />
+       y="437.71002"
+       inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\oven.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:0.67161238"
        d="m 60.732281,461.99771 634.614079,0 c 9.86896,0 8.72474,23.18553 0,23.18553 l -634.614079,0 c -16.17175,0 -15.447072,-23.18553 0,-23.18553 z"
        id="rect4731"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\oven.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:0.67161238"
        d="m 63.17195,732.63748 634.61408,0 c 9.86896,0 8.72474,23.18553 0,23.18553 l -634.61408,0 c -16.17175,0 -15.447072,-23.18553 0,-23.18553 z"
        id="rect4731-0"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\oven.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:40px;line-height:125%;font-family:Impact;-inkscape-font-specification:'Impact Condensed';letter-spacing:0px;word-spacing:0px;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="169.14284"
        y="423.63712"
        id="text4749"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\oven.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan4751"
          x="169.14284"
