@@ -12,7 +12,7 @@ public class SimpleEnemyScript : MonoBehaviour {
     private bool canMoveForward = false;
     private Rigidbody2D rb2d;
     private Vector2 edgeScan = new Vector2(1, -1);
-    private Vector2 forwardScan = new Vector2(1, 0);
+    private Vector2 forwardScan = new Vector2(-1, 0);
 
 	// Use this for initialization
 	void Start () {
@@ -28,7 +28,7 @@ public class SimpleEnemyScript : MonoBehaviour {
     void FixedUpdate()
     {
         onGround = Physics2D.Raycast(transform.Find("EdgeDetector").position, edgeScan, 1, 1 << LayerMask.NameToLayer("Ground"));
-        canMoveForward = Physics2D.Raycast(transform.Find("EdgeDetector").position, forwardScan, 1, (1 << LayerMask.NameToLayer("Ground")));
+        canMoveForward = Physics2D.Raycast(transform.Find("EdgeDetector").position, forwardScan, 1, (1 << LayerMask.NameToLayer("Ground")) | (1 << LayerMask.NameToLayer("Enemy")));
         
         if (onGround && !canMoveForward)
         {
@@ -56,6 +56,6 @@ public class SimpleEnemyScript : MonoBehaviour {
     void OnDrawGizmos()
     {
         Gizmos.DrawLine(transform.Find("EdgeDetector").position,
-            transform.Find("EdgeDetector").position + (new Vector3(1, 0,0)) * 1);
+            transform.Find("EdgeDetector").position + new Vector3(forwardScan.x, forwardScan.y,0));
     }
 }

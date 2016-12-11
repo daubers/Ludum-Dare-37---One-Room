@@ -146,6 +146,14 @@ public class PlayerBehavior : MonoBehaviour {
         }
     }
 
+    void OnParticleCollision(GameObject src)
+    {
+        if (src.gameObject.tag == "instadeath")
+        {
+            gameObject.GetComponent<HealthController>().instaDeath();
+        }
+    }
+
     public void onDeath()
     {
         GetComponent<SpriteRenderer>().enabled = false;

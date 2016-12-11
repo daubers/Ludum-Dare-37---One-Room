@@ -181,7 +181,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.53538085"
-     inkscape:cx="569.72603"
+     inkscape:cx="251.26115"
      inkscape:cy="414.12442"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -200,7 +200,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -288,5 +288,12 @@
        inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\green_thing.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:0.34000017;fill:#dde9af;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect10449"
+       width="246.55345"
+       height="160.63332"
+       x="382.905"
+       y="1039.2872" />
   </g>
 </svg>
