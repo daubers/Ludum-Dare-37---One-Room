@@ -190,4 +190,9 @@ public class PlayerBehavior : MonoBehaviour {
             transform.position + Quaternion.AngleAxis(1 * 15, new Vector3(0, 0, 1)) * transform.up * -1.6f);
 
     }
+
+    void Awake()
+    {
+        DontDestroyOnLoad(transform.gameObject);
+    }
 }
