@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class HealthController : MonoBehaviour {
 
     public int totalHealth = 1;
+    public int startHealth = 1;
     public GameObject heartFull;
     public GameObject heartEmpty;
     public float damageDebounce = 1f;
@@ -20,8 +21,8 @@ public class HealthController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        
-        currentHealth = totalHealth;
+
+        currentHealth = startHealth;
 
         if (gameObject.tag == "Player")
         {
@@ -45,56 +46,77 @@ public class HealthController : MonoBehaviour {
         /* Takes damage, returns score
          * 
          */
-        if (Time.fixedTime  > lastDamage + damageDebounce)
+        int score = 0;
+        if (Time.fixedTime > lastDamage + damageDebounce || lastDamage == 0f)
         {
+            Debug.Log("causing damage");
             currentHealth = currentHealth - damage;
             if (currentHealth <= 0)
             {
-                int score = gameObject.GetComponent<EnemyProperties>().getPoints();
-                Destroy(gameObject);
-                return score;
+                
+
+                if (!isPlayer)
+                {
+                    score = gameObject.GetComponent<EnemyProperties>().getPoints();
+                    Destroy(gameObject);
+                }
+                else
+                    gameObject.GetComponent<PlayerBehavior>().onDeath();
+                
             }
             lastDamage = Time.fixedTime;
             updateHealthUI();
         }
-        return 0;
+        return score;
     }
 
     public void instaDeath()
     {
+        Debug.Log("instadeath called");
         hit(currentHealth);
     }
 
-    void addHealth(int extraHealth)
+    public void addHealth(int extraHealth)
     {
         currentHealth = currentHealth + extraHealth;
+        updateHealthUI();
     }
 
-    void addPermanantHealthBuff(int extraHealth)
+    public void resetHealth()
+    {
+        currentHealth = startHealth;
+        updateHealthUI();
+    }
+
+    public void addPermanantHealthBuff(int extraHealth)
     {
         totalHealth = totalHealth + extraHealth;
         currentHealth = totalHealth;
+        updateHealthUI();
     }
 
     private void updateHealthUI()
     {
-        for (int i = 1; i < totalHealth+1; i++)
+        if (isPlayer)
         {
-            GameObject heartToUse;
-            if (i-1 < (totalHealth - currentHealth))
-                heartToUse = heartEmpty;
-            else
-                heartToUse = heartFull;
-            if (i>heartGauge.Count)
+            for (int i = 1; i < totalHealth + 1; i++)
             {
-                GameObject child = Instantiate(heartToUse);
-                child.transform.position = (heartToUse.GetComponent<RectTransform>().position) + (new Vector3(heartToUse.GetComponent<RectTransform>().sizeDelta.x*(i-1), 0, 0));
-                child.transform.SetParent(UICanvas.transform, false);
-                heartGauge.Add(child);
-            }
-            else
-            {
-                heartGauge[heartGauge.Count-i].GetComponent<Image>().sprite = heartToUse.GetComponent<Image>().sprite;
+                GameObject heartToUse;
+                if (i - 1 < (totalHealth - currentHealth))
+                    heartToUse = heartEmpty;
+                else
+                    heartToUse = heartFull;
+                if (i > heartGauge.Count)
+                {
+                    GameObject child = Instantiate(heartToUse);
+                    child.transform.position = (heartToUse.GetComponent<RectTransform>().position) + (new Vector3(heartToUse.GetComponent<RectTransform>().sizeDelta.x * (i - 1), 0, 0));
+                    child.transform.SetParent(UICanvas.transform, false);
+                    heartGauge.Add(child);
+                }
+                else
+                {
+                    heartGauge[heartGauge.Count - i].GetComponent<Image>().sprite = heartToUse.GetComponent<Image>().sprite;
+                }
             }
         }
     }

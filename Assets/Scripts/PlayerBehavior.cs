@@ -11,6 +11,8 @@ public class PlayerBehavior : MonoBehaviour {
 
     public float enemyBounceForce = 100f;
 
+    public GameObject deathEffect;
+
     private Rigidbody2D rb2d;
     private bool isGrounded = false;
     private bool facingRight = true;
@@ -21,16 +23,34 @@ public class PlayerBehavior : MonoBehaviour {
     private float startGravity;
     private ScoreController scoreController;
 
+    private Vector3 startPoint;
+
+    private float resetSpeed = 5f;
+    private float tweenTime = 0f;
+    private Vector3 tweenStartPosition;
+    private bool resetting=false;
+
 	// Use this for initialization
 	void Start () {
         rb2d = GetComponent<Rigidbody2D>();
         scoreController = GetComponent<ScoreController>();
+        startPoint = GameObject.Find("StartPosition").transform.position;
         startGravity = rb2d.gravityScale;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	    
+	    if (resetting)
+        {
+            tweenTime = tweenTime + Time.deltaTime;
+            transform.position = Vector3.Lerp(tweenStartPosition, startPoint, tweenTime / resetSpeed);
+            if (transform.position == startPoint)
+            {
+                tweenTime = 0f;
+                resetting = false;
+                onRevival();
+            }
+        }
 	}
 
     bool isGroundedB(float arc, float rayLength, int direction)
@@ -102,6 +122,7 @@ public class PlayerBehavior : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D other)
     {
+        Debug.Log(other.gameObject.tag);
         if (other.gameObject.tag == "Enemy")
         {
             Vector2 dir = other.contacts[0].point - new Vector2(transform.position.x, transform.position.y);
@@ -123,6 +144,32 @@ public class PlayerBehavior : MonoBehaviour {
         {
             gameObject.GetComponent<HealthController>().instaDeath();
         }
+    }
+
+    public void onDeath()
+    {
+        GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<PolygonCollider2D>().enabled = false;
+        rb2d.gravityScale = 0;
+        GameObject fx = (GameObject) Instantiate(deathEffect, transform.position, Quaternion.identity);
+        Destroy(fx, 2);
+        StartCoroutine("resetToStart");
+    }
+
+    IEnumerator resetToStart()
+    {
+        yield return new WaitForSeconds(2);
+        Debug.Log("Resetting");
+        resetting = true;
+        tweenStartPosition = transform.position;
+    }
+
+    void onRevival()
+    {
+        gameObject.GetComponent<HealthController>().resetHealth();
+        GetComponent<SpriteRenderer>().enabled = true;
+        GetComponent<PolygonCollider2D>().enabled = true;
+        rb2d.gravityScale = 1;
     }
 
     void OnDrawGizmos()
