@@ -24,6 +24,11 @@ public class ScoreController : MonoBehaviour {
         updateUI();
     }
 
+    public float getScore()
+    {
+        return score;
+    }
+
     public void updateUI()
     {
         scoreText.GetComponent<Text>().text = score.ToString();

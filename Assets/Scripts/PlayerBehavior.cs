@@ -191,8 +191,4 @@ public class PlayerBehavior : MonoBehaviour {
 
     }
 
-    void Awake()
-    {
-        DontDestroyOnLoad(transform.gameObject);
-    }
 }

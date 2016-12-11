@@ -60,9 +60,15 @@
        width="122.85714"
        height="74.285713"
        x="185.71428"
-       y="872.36218" />
+       y="872.36218"
+       inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\button\top.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <g
-       id="g11628">
+       id="g11628"
+       inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\button\bottom.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <rect
          y="946.64789"
          x="97.14286"
