@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="512"
+   height="512"
+   viewBox="0 0 512.00001 512.00001"
+   id="svg4182"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="tasty_beans_tin.svg">
+  <defs
+     id="defs4184" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.106255"
+     inkscape:cx="814.84055"
+     inkscape:cy="306.50002"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1680"
+     inkscape:window-height="987"
+     inkscape:window-x="-8"
+     inkscape:window-y="19"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4187">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-540.36216)">
+    <path
+       style="fill:#ececec;fill-opacity:1;stroke:#000000"
+       d="M 68.572266 49.142578 L 68.572266 459.69531 A 188.57883 22.864462 0 0 0 68.564453 459.71484 A 188.57883 22.864462 0 0 0 68.572266 459.74219 L 68.572266 460.57227 L 68.814453 460.57227 A 188.57883 22.864462 0 0 0 257.14258 482.57812 A 188.57883 22.864462 0 0 0 445.36719 460.57227 L 445.71484 460.57227 L 445.71484 459.73438 A 188.57883 22.864462 0 0 0 445.72266 459.71484 A 188.57883 22.864462 0 0 0 445.71484 459.6875 L 445.71484 49.142578 L 68.572266 49.142578 z "
+       transform="translate(0,540.36216)"
+       id="rect4730"
+       inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\beans_tin.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <ellipse
+       style="fill:#ececec;fill-opacity:1;stroke:#000000;stroke-width:0.9853614"
+       id="path4732"
+       cx="257.14285"
+       cy="590.36212"
+       rx="188.57883"
+       ry="22.864462"
+       inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\beans_tin.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#eeaaff;fill-opacity:1;stroke:#000000;stroke-width:0.83093333"
+       d="m 133.21824,667.86234 0,282.70416 a 188.70755,15.776005 0 0 0 125.72443,4.02403 188.70755,15.776005 0 0 0 122.12622,-3.76929 l 0,-282.69611 a 188.70755,15.776005 0 0 1 -122.11645,3.77197 188.70755,15.776005 0 0 1 -125.7342,-4.03476 z"
+       id="path4863"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\beans_tin.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="183.14943"
+       y="874.28387"
+       id="text4865"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\beans_tin.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan4867"
+         x="183.14943"
+         y="874.28387">BEANS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Segoe Print';-inkscape-font-specification:'Segoe Print';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="185.95216"
+       y="754.72345"
+       id="text4865-2"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\beans_tin.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan4867-2"
+         x="185.95216"
+         y="754.72345">TASTY</tspan></text>
+  </g>
+</svg>

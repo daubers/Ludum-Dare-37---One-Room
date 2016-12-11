@@ -20,7 +20,7 @@ public class KnifeBehaviour : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "kettle")
+        if (other.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
             AudioSource.PlayClipAtPoint(tapSound, other.contacts[0].point);
         }
