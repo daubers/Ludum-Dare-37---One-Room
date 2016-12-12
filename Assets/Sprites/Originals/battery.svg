@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg4247"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="battery.svg">
+  <defs
+     id="defs4249" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.81294177"
+     inkscape:cx="904.81246"
+     inkscape:cy="565.55442"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1672"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4252">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g5057"
+       inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\battery.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="319.24338"
+         x="283.53558"
+         height="355.49902"
+         width="135.786"
+         id="rect5041"
+         style="opacity:1;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\battery.png"
+         d="m 418.84803,673.25394 a 67.42746,14.67913 0 0 1 0.008,0.22518 l 0,0 a 67.42746,14.67913 0 0 1 -67.42746,14.67913 67.42746,14.67913 0 0 1 -67.42746,-14.67913 67.42746,14.67913 0 0 1 0.008,-0.22491 M 418.85603,320.50668 a 67.42746,14.67913 0 0 1 -67.42746,14.67913 67.42746,14.67913 0 0 1 -67.42746,-14.67913 67.42746,14.67913 0 0 1 67.42746,-14.67913 67.42746,14.67913 0 0 1 67.42746,14.67913 l 0,0 m -0.2846,-0.58449 0,354.84987 m -134.28572,0.0117 0,-354.85963"
+         style="opacity:1;fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:0.93108243;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path4878"
+         inkscape:connector-curvature="0" />
+      <flowRoot
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;writing-mode:tb-rl;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="flowRoot4981"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4983"><rect
+             style="writing-mode:tb-rl;fill:#cccccc"
+             y="371.50162"
+             x="336.73999"
+             height="198.96873"
+             width="41.823414"
+             id="rect4985" /></flowRegion><flowPara
+           id="flowPara4987">POWERCELLfds</flowPara></flowRoot>      <text
+         sodipodi:linespacing="125%"
+         id="text4993"
+         y="444.38507"
+         x="333.04968"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;writing-mode:tb-rl;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="333.04968"
+           x="444.38507"
+           id="tspan4995"
+           sodipodi:role="line"></tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4997"
+         y="312.45682"
+         x="350.88614"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;writing-mode:tb-rl;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-family:Impact;-inkscape-font-specification:'Impact Condensed';letter-spacing:-17.04998398px;writing-mode:tb-rl;fill:#cccccc"
+           rotate="0"
+           y="350.88614"
+           x="312.45682"
+           id="tspan4999"
+           sodipodi:role="line" /></text>
+      <path
+         inkscape:connector-curvature="0"
+         d="m 368.06776,315.31552 -0.003,4.86212 -0.003,0.007 c -10e-6,1.61284 -7.43476,2.9203 -16.60598,2.9203 -9.17122,0 -16.60597,-1.30746 -16.6362,-2.92693 l -0.0302,-4.87188 m 33.27855,0.002 c -10e-6,1.6125 -7.4497,2.9197 -16.63936,2.9197 -9.18965,0 -16.63935,-1.3072 -16.63936,-2.9197 10e-6,-1.6125 7.44971,-2.9197 16.63936,-2.9197 9.18966,0 16.63935,1.3072 16.63936,2.9197 z"
+         style="opacity:1;fill:#cccccc;fill-opacity:0.40465166;stroke:#000000;stroke-width:0.20711496;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path4972" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path5001"
+         d="m 351.42857,349.66735 0,316.44333"
+         style="fill:#cccccc;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <text
+         transform="translate(-17.221406,25.832108)"
+         y="30.75251"
+         x="-34.262039"
+         sodipodi:linespacing="125%"
+         id="text5003"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:40px;line-height:125%;font-family:Impact;-inkscape-font-specification:'Impact Condensed';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><textPath
+           id="textPath5007"
+           xlink:href="#path5001"><tspan
+   id="tspan5005"
+   style="fill:#000000">POWERCELLMAX</tspan></textPath></text>
+    </g>
+  </g>
+</svg>

@@ -65,6 +65,12 @@ public class PlayerBehavior : MonoBehaviour {
     void FixedUpdate()
     {
 
+        if (transform.position.y < -47)
+        {
+            if (!resetting)
+                gameObject.GetComponent<HealthController>().instaDeath();
+        }
+
         isGrounded = isGroundedB(15, 1.6f, -1);
         bool isLadderAbove = Physics2D.Raycast(transform.position, transform.up, 2, (1 << LayerMask.NameToLayer("Ladder")));
         bool isLadderBelow = Physics2D.Raycast(transform.position, transform.up*-1, 2, (1 << LayerMask.NameToLayer("Ladder")));
@@ -122,7 +128,6 @@ public class PlayerBehavior : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log(other.gameObject.tag);
         if (other.gameObject.tag == "Enemy")
         {
             Vector2 dir = other.contacts[0].point - new Vector2(transform.position.x, transform.position.y);

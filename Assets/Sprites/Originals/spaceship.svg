@@ -87,7 +87,10 @@
        d="m 247.71864,533.11034 c 32.09735,-6.3e-4 58.31222,-24.45517 59.01563,-55.11428 -0.6694,-30.68358 -26.8953,-55.1745 -59.01758,-55.17483 l 0,5e-5 c -32.09811,-3.8e-4 -58.31415,24.45444 -59.01758,55.11425 0.66942,30.68428 26.89649,55.1755 59.01953,55.17481 z"
        id="path4148-2"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="sccccs" />
+       sodipodi:nodetypes="sccccs"
+       inkscape:export-filename="C:\Users\matt\Documents\Unity Projects\Ludum Dare 37 - One Room\Assets\Sprites\spaceship.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <ellipse
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4136-8"
